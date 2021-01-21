@@ -35,17 +35,20 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-
 ggplot(data = diamonds, aes(x = color, y = depth)) +
   geom_line() +
   theme_bw()
-
 ```
 
 ```{r break-it-2}
+
 ggplot(data = diamonds, aes(x = cut, y = price)) +
   geom_col() +
   theme_bw()
+
+ggplot(data = diamonds, aes(x = color, y = carat), stat = "count") +
+  geom_jitter() +
+  theme_classic()
 ```
 
 ## END Discussion 3
