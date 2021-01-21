@@ -43,7 +43,9 @@ ggplot(data = diamonds, aes(x = color, y = depth)) +
 ```
 
 ```{r break-it-2}
-
+ggplot(data = diamonds, aes(x = cut, y = price)) +
+  geom_col() +
+  theme_bw()
 ```
 
 ## END Discussion 3
